@@ -71,8 +71,8 @@ def get_db_dat(start_date,end_date):
     db='AVData.Reporting.CalibrationDataFull' #this is where the data comes from
     
     #Need to login to the server with these
-    username='gis'
-    password='Axd!35jkl'
+    username=####Redacted, contact bcubrich@utah.gov for details
+    password=####Redacted, contact bcubrich@utah.gov for details
     
     #create a connection to the server
     cnxn = pyodbc.connect(r'DRIVER={'+driver_names[0]+'};'
@@ -1176,7 +1176,7 @@ def pzs_main():
     msg['To'] = ", ".join(you)   #create a string of recipients from a list
     
     #open a server conection
-    server = smtplib.SMTP('send.utah.gov', 25)
+    server = smtplib.SMTP()####Redacted, contact bcubrich@utah.gov for details)
     #if the user wants to or the email is autoatic send it out
     if send_email==1: server.sendmail(me, you, msg.as_string())
     #close the server conection
@@ -1421,11 +1421,7 @@ def quitit():
     
     #if send is chosen this is the default send list.
     if preview == 2:
-        you=['bcubrich@utah.gov','smward@utah.gov','lleclair@utah.gov',
-             'jmcoombs@utah.gov', 'tbaldwin@utah.gov','kchachere@utah.gov',
-             'bcluster@utah.gov','pharrison@utah.gov','khart@utah.gov',
-             'kkreykes@utah.gov','bcubrich@utah.gov', 'adarnold@utah.gov',
-             'bocall@utah.gov', 'jkarmazyn@utah.gov','ksymons@utah.gov']
+        you=####Redacted, contact bcubrich@utah.gov for details
         
     #setup the date range if user triggered
     cut_date1=mon_dict.get(variable1.get()) +'-'+ variable2.get() +'-'+ variable3.get()
@@ -1577,11 +1573,7 @@ def tick():
         if counter<2:
             auto_run=1
 #            you=['bcubrich@utah.gov']
-            you=['bcubrich@utah.gov','smward@utah.gov','lleclair@utah.gov',
-                 'jmcoombs@utah.gov', 'tbaldwin@utah.gov','kchachere@utah.gov',
-                 'bcluster@utah.gov','pharrison@utah.gov','khart@utah.gov',
-                 'kkreykes@utah.gov','bcubrich@utah.gov', 'adarnold@utah.gov',
-                 'bocall@utah.gov', 'jkarmazyn@utah.gov','ksymons@utah.gov']
+            you=####Redacted, contact bcubrich@utah.gov for details
             preview=2
             send_email=1
             write_file=0
@@ -1592,7 +1584,7 @@ def tick():
             av_date2= dt.datetime.now()
             
             #won't send the email unless the right password is supplied
-            if password=='Admin123!@#':
+            if password==####Redacted, contact bcubrich@utah.gov for details
                 pzs_main()
     
     # calls itself every 200 milliseconds
