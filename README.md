@@ -9,9 +9,6 @@ Just download the latest version here. The source coed will be included, but  a 
 
 No prereqs needed. Just download the .exe and run it. 
 
-```
-Give examples
-```
 
 ### Installing
 
@@ -22,12 +19,7 @@ No installation needed. Just download the .exe and run it.
 
 You can test the application by clicking run with the "Send Email" checkbox checked. This will send an email to me at bcubrich@utah.gov by default, so to perform the test you will want to change the "Preview Email:" entry field to your own email. 
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
 This will test the server connection, email connection, and the integrity of the download of the script.
-
 
 
 ## Built With
