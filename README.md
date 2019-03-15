@@ -6,8 +6,8 @@ Check daily PZS for failures, create email report. Can check past PZS as well. W
 Just download the latest version here. The source coed will be included, but  a stand alone binary file will also be provided which will not require the user to have python or a python IDE installed.
 
 ### Prerequisites
-
-No prereqs needed. Just download the .exe and run it. 
+-need the right driver for you MS SQL Server. I am using 'ODBC Driver 17 for SQL Server'
+https://www.microsoft.com/en-us/download/details.aspx?id=56567
 
 
 ### Installing
